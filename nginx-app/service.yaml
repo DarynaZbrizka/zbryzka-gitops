@@ -1,0 +1,13 @@
+YAML
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: zbryzka-service
+spec:
+  selector:
+    app: zbryzka-app
+  ports:
+  - port: 80
+    targetPort: 80
+  type: ClusterIP
